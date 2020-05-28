@@ -1,3 +1,5 @@
+stack: python 3.6
+
 environment:
   matrix:
   - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
