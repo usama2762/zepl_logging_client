@@ -1,3 +1,5 @@
+stack: python 3.6
+
 environment:
   matrix:
   - TOXENV: py35
@@ -7,7 +9,7 @@ environment:
 build: off
 
 install:
-- pip3 install tox
+- pip install tox
 
 test_script:
 - tox -v -e py
