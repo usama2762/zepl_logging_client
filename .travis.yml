@@ -1,0 +1,12 @@
+language: python
+sudo: false
+
+python:
+  - "3.6"
+  - "3.7"
+  - "pypy3"
+
+install:
+  - pip install tox
+# command to run tests
+script: tox -v -e py

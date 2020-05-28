@@ -26,7 +26,7 @@ class Logging():
         }
         headers = {"Authorization": f"Token {self.token}"}
 
-        requests.post(self.url, data = myobj, headers=headers)
+        return str(requests.post(self.url, data = myobj, headers=headers))
 
     def debug(self, message):
         myobj = {
@@ -38,7 +38,7 @@ class Logging():
         }
         headers = {"Authorization": f"Token {self.token}"}
 
-        requests.post(self.url, data = myobj, headers=headers)
+        return str(requests.post(self.url, data = myobj, headers=headers))
 
     def warning(self, message):
         myobj = {
@@ -50,7 +50,7 @@ class Logging():
         }
         headers = {"Authorization": f"Token {self.token}"}
 
-        requests.post(self.url, data = myobj, headers=headers)
+        return str(requests.post(self.url, data = myobj, headers=headers))
 
     def error(self, message):
         myobj = {
@@ -62,7 +62,7 @@ class Logging():
         }
         headers = {"Authorization": f"Token {self.token}"}
 
-        requests.post(self.url, data = myobj, headers=headers)
+        return str(requests.post(self.url, data = myobj, headers=headers))
 
     def critical(self, message):
         myobj = {
@@ -74,4 +74,4 @@ class Logging():
         }
         headers = {"Authorization": f"Token {self.token}"}
 
-        requests.post(self.url, data = myobj, headers=headers)
+        return str(requests.post(self.url, data = myobj, headers=headers))
