@@ -5,7 +5,7 @@ This package let's you do logging just like a basic logging modeule but it is de
 
 ## Installation
 
-You can install the Real Python Feed Reader from [PyPI](https://pypi.org/project/zepl_logging/):
+You can install zepl_logging package from [PyPI](https://pypi.org/project/zepl_logging/):
 
     pip install zepl_logging
 
@@ -23,4 +23,6 @@ The project is Suported with Python 3+
     
     logger.info('Connected to Db!')
     logger.debug('This is a debug message!')
+
+
 
