@@ -4,10 +4,10 @@ environment:
   - TOXENV: py36
   - TOXENV: py37
 
-build: on
+build: off
 
 install:
-- pip install tox
+- pip3 install tox
 
 test_script:
 - tox -v -e py
