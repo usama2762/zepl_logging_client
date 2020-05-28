@@ -1,6 +1,5 @@
 environment:
   matrix:
-  - TOXENV: py27
   - TOXENV: py35
   - TOXENV: py36
   - TOXENV: py37
@@ -11,4 +10,4 @@ install:
 - pip install tox
 
 test_script:
-- tox
+- tox -v -e py
